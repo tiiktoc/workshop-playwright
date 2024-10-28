@@ -26,7 +26,7 @@ export class LoginPage {
   }
 
   async gotoLoginPage() {
-    await this.page.goto("https://odds-playwright.vercel.app/");
+    await this.page.goto("https://workshop-playwright.vercel.app/");
   }
 
   async displayLoginPage() {
@@ -55,5 +55,4 @@ export class LoginPage {
   async displayLoginError() {
     await expect(this.msgError).toBeVisible();
   }
-
 }
